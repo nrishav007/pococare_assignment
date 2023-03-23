@@ -22,12 +22,12 @@ app.use(
   })
 );
 app.post("/signup", signup);
-
+app.get("/", test);
 app.post("/login", login);
 app.post("/refreshToken", refreshToken);
 app.use(auth);
 app.use("/user", userRoute);
-app.get("/", test);
+
 
 app.listen(port, listen);
 
